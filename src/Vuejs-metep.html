@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>la Météo des villes</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div id="search">
+      <input type="search">
+    </div>
+
+		<div class="block1">
+	    <img src="soleil-meteo.png" width="100%" height="auto" alt="meteo soleil"/><p>LUNDI </p><span>20°c</span> </div>
+
+
+	<script>
+	url="http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=552b708f0b82874c53b0ef95d348f293"
+
+	fetch(url).
+	then(resp => { return resp.json()}).
+	then(data => console.log(data));
+	</script>
+
+
+	</body>
+</html>
